@@ -80,9 +80,9 @@ d ≤ tol
 
 This means:
 
-* ✅ **Embedded or touching triangles** → `d ≈ 0`
-* ✅ **Near-contact triangles** → within tolerance band
-* ❌ **Far-away triangles** → ignored
+* **Embedded or touching triangles** → `d ≈ 0`
+* **Near-contact triangles** → within tolerance band
+* **Far-away triangles** → ignored
 
 ---
 
