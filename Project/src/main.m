@@ -122,7 +122,7 @@ for k = 1:N
     % Build KD-tree on master centroids (same as static STS code)
     master.kdtree = KDTreeSearcher(master.triCentroid);
 
-    % --- 3) Compute contact using your STS solver ---
+    % --- 3) Compute contact using STS solver ---
     [A_contact, contactMask] = computeContactArea_STS(slave, master, tol, opts);
     contactAreas(k) = A_contact;
 
@@ -181,3 +181,5 @@ function V_out = transformVertices(V_in, T)
     Vw = (T * Vh.').';                  % Nx4
     V_out = Vw(:,1:3);
 end
+
+
